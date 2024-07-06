@@ -1,0 +1,18 @@
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+}
+
+.select-option {
+  background-color: transparent;
+  border: solid 0px;
+  outline: none;
+}
+
+.sort_birth_date {
+  font-weight: bold;
+}

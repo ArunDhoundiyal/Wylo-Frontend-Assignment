@@ -1,0 +1,12 @@
+.delete-edit-button {
+  background-color: transparent;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.delete-button {
+  margin-bottom: 25px;
+}
+.delete-icon {
+  font-size: 20px;
+}

@@ -1,0 +1,23 @@
+.create-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.create-button-logo {
+  font-size: 25px;
+}
+
+.create-button {
+  height: 45px;
+  width: 80px;
+  border: solid 0px;
+  background-color: #add8e6;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

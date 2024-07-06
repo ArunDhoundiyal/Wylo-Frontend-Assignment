@@ -1,0 +1,27 @@
+.user-list {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+  margin: 18px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.name-list-heading {
+  font-size: 18px;
+}
+
+.name-dob-container {
+  cursor: pointer;
+}
+
+.edit-delete-button-container {
+  display: flex;
+  flex-direction: column;
+  border: solid 0px;
+  height: 100%;
+}
