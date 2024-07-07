@@ -5,10 +5,10 @@ import "./index.css";
 const Delete = ({ userId, setData, setDataError }) => {
   const onDeleteUser = async (userId) => {
     try {
-      const deleteUser = await axios.delete(
-        `https://mangement-of-user-detail-system-1.onrender.com/user_management/${userId}`
+      await axios.delete(
+        `https://wylo-backend-assign-3.onrender.com/user_management/${userId}`
       );
-      setData(deleteUser);
+      setData((preData) => preData.filter((user) => user.id !== userId));
     } catch (error) {
       console.log(error);
       setDataError(error);

@@ -14,6 +14,8 @@ const Home = () => {
   const [sort, setSort] = useState("NORMAL");
   const [pagination, setPagination] = useState(1);
 
+  console.log(search, data[0]);
+
   const addNumber = () => {
     setPagination((preState) => preState + 1);
   };
@@ -30,7 +32,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://mangement-of-user-detail-system-1.onrender.com/user_management/?&sort=${sort}&page_no=${pagination}&search=${search}`
+          `https://wylo-backend-assign-3.onrender.com/user_management/?&sort=${sort}&page_no=${pagination}&search=${search}`
         );
         setData(response.data);
         setLoading(false);

@@ -67,12 +67,15 @@ const UserForm = () => {
 
     try {
       const response = await axios.post(
-        "https://mangement-of-user-detail-system-1.onrender.com/user_management",
+        "https://wylo-backend-assign-3.onrender.com/user_management",
         userForm
       );
       console.log(response);
       if (response.data === "User Created Successfully") {
         setSubmitSuccessful("Submit Successfully");
+        setTimeout(() => {
+          setSubmitSuccessful("");
+        }, 5000);
         setUser(userForm);
       }
       setUserDetails({
@@ -85,7 +88,7 @@ const UserForm = () => {
       setValidationMessages({ number: "", gmail: "" });
     } catch (error) {
       console.log(`Error Creating Post: ${error}`);
-      setSubmitSuccessful("");
+      setSubmitSuccessful("Error while create user");
     }
   };
 
