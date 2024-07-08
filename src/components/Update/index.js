@@ -83,7 +83,7 @@ const Update = () => {
     } else {
       try {
         const response = await axios.put(
-          `https://wylo-backend-assign-3.onrender.com/user_management/${user.id}`,
+          `https://wylo-backend-task-user-management.onrender.com/user_management/${user.id}`,
           updatedUserDetail
         );
         console.log(response);

@@ -67,7 +67,7 @@ const UserForm = () => {
 
     try {
       const response = await axios.post(
-        "https://wylo-backend-assign-3.onrender.com/user_management",
+        "https://wylo-backend-task-user-management.onrender.com/user_management",
         userForm
       );
       console.log(response);

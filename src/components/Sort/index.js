@@ -1,6 +1,7 @@
+import DeleteAll from "../DeleteAll";
 import "./index.css";
 
-const Sort = ({ onChangeSelectOption, updatedValue }) => {
+const Sort = ({ onChangeSelectOption, updatedValue, setData, data }) => {
   const onClickSortOption = (event) => {
     onChangeSelectOption(event.target.value);
   };
@@ -18,6 +19,7 @@ const Sort = ({ onChangeSelectOption, updatedValue }) => {
           <option value="DESC">Desc</option>
           <option value="NORMAL">Norm</option>
         </select>
+        <DeleteAll data={data} setData={setData} />
       </div>
     </div>
   );

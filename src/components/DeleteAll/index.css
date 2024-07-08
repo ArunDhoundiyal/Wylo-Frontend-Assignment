@@ -1,0 +1,10 @@
+.delete-all-button {
+  background-color: #ff0000;
+  color: white;
+  border: solid 0px;
+  height: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 8px;
+  width: 90px;
+}
